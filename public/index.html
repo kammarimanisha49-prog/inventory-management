@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Inventory Management System</h1>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="products.html">Products</a>
+            <a href="suppliers.html">Suppliers</a>
+            <a href="transactions.html">Transactions</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Dashboard</h2>
+
+        <section class="cards">
+            <div class="card">
+                <h3>Total Products</h3>
+                <p id="totalProducts">0</p>
+            </div>
+            <div class="card">
+                <h3>Total Suppliers</h3>
+                <p id="totalSuppliers">0</p>
+            </div>
+            <div class="card">
+                <h3>Total Stock Units</h3>
+                <p id="totalUnits">0</p>
+            </div>
+            <div class="card">
+                <h3>Low Stock Products</h3>
+                <p id="lowStock">0</p>
+            </div>
+        </section>
+
+        <h2>Product Stock Details</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Product Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Reorder Level</th>
+                    </tr>
+                </thead>
+                <tbody id="dashboardProducts"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
